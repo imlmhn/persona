@@ -1,0 +1,51 @@
+/* training.css */
+
+.training-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 800px; /* Full viewport height */
+    background-color: #ffffff; /* White background as in the image */
+}
+
+.status-text {
+    font-size: 2em; /* Adjust as needed */
+    font-weight: bold;
+    color: #333; /* Dark text color */
+    margin-bottom: 50px; /* Space between text and squares */
+}
+
+.progress-squares-container {
+    display: flex;
+    gap: 20px; /* Space between squares */
+}
+
+.progress-square {
+    width: 60px; /* Size of the square */
+    height: 60px; /* Size of the square */
+    border: 2px solid #333; /* Border for the empty squares */
+    background-color: transparent; /* Default empty state */
+    transition: background-color 0.3s ease; /* Smooth transition for filling */
+}
+
+.progress-square.filled {
+    background-color: #333; /* Filled color (dark gray/black) */
+}
+
+/* If you decide to keep the stop button, add styles for it */
+
+.stop-button {
+    margin-top: 50px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.stop-button:hover {
+    background-color: #d32f2f;
+}
