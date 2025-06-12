@@ -54,7 +54,7 @@
 ####  📄 모델 학습하기 페이지
 ![Image](https://github.com/user-attachments/assets/adee918f-97ea-4a3f-8739-17db6a32b405)
 ![Image](https://github.com/user-attachments/assets/73fd1590-26f5-4210-9d84-10c888f33259)
-![Image](https://github.com/user-attachments/assets/a83009de-c19a-4d36-b381-871fe799fd9d)
+![Image](https://github.com/user-attachments/assets/a83009de-c19a-4d36-b381-871fe799fd9d)  
 #### 음성 파일 업로드
 **💻 클라이언트**
 - `.wav` 또는 `.mp3` 형식의 음성 파일 업로드 (최대 5개)
@@ -93,7 +93,7 @@
 ---
 
 #### 📄 2. 훈련 완료 페이지
-![Image](https://github.com/user-attachments/assets/60d41e84-4401-4d3a-9ba9-ae0774a84225)
+![Image](https://github.com/user-attachments/assets/60d41e84-4401-4d3a-9ba9-ae0774a84225)  
 **💾 모델 저장**
 - **[모델 저장하기]** 클릭  
   → `sessionStorage`에서 모델 이름을 가져와 서버에 다운로드 요청
@@ -118,7 +118,7 @@
 
 #### 📄 3. 커버 생성 완료 페이지
 ![Image](https://github.com/user-attachments/assets/d6f1525d-4ec4-4624-adc8-c41aeeb2a9cb)
-![Image](https://github.com/user-attachments/assets/b98b1b7c-16a5-481b-92c7-d0d798a1e256)
+![Image](https://github.com/user-attachments/assets/b98b1b7c-16a5-481b-92c7-d0d798a1e256)  
 
 **💾 커버 노래 저장**
 - **[노래 저장하기]** 클릭 → 서버에 커버 파일 다운로드 요청
