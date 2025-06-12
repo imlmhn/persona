@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './css/app.css';
 import musicIcon from './assets/music.png';
+import persona from './assets/persona.png';
 
 const Trained = () => {
     const [songFile, setSongFile] = useState(null);
@@ -147,6 +148,10 @@ const Trained = () => {
     return (
         <div className="page1-container">
             <div className="page1-content">
+                <span className="page1-title">
+                    <span>Persona</span>
+                    <img className="persona_img" src={persona} alt="persona" />
+                </span>
                 <h1 className="trained-title">
                     당신의 목소리로<br />AI 모델이 훈련되었습니다!
                 </h1>

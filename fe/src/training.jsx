@@ -44,11 +44,11 @@ const Training = () => {
                         currentStep.current = 1;
                         setLogs((prev) => [...prev, data.message]);
                         setProgress(25); // 1칸
-                    } else if (data.message === "특징 추출 완료" && currentStep.current === 1) {
+                    } else if (data.message === "특징 추출 중..." && currentStep.current === 1) {
                         currentStep.current = 2;
                         setLogs((prev) => [...prev, data.message]);
                         setProgress(50); // 2칸
-                    } else if (data.message === "모델 학습 시작" && currentStep.current === 2) {
+                    } else if (data.message === "모델 학습 중..." && currentStep.current === 2) {
                         currentStep.current = 3;
                         setLogs((prev) => [...prev, data.message]);
                         setProgress(75); // 3칸

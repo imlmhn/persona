@@ -43,9 +43,9 @@ const Covering = () => {
                         }
                         const newLogs = [...prev, data.message];
                         // 메시지에 따라 진행률 업데이트
-                        if (data.message.includes("보컬 분리 중...")) {
+
                             setProgress(25); // 1칸
-                        } else if (data.message.includes("보컬 변환 시작...")) {
+                            if (data.message.includes("보컬 변환 중...")) {
                             setProgress(50); // 2칸
                         } else if (data.message.includes("보컬 + 반주 믹싱 중...")) {
                             setProgress(75); // 3칸

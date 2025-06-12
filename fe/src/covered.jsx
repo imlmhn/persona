@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './css/app.css';
+import persona from './assets/persona.png';
 
 const Covered = () => {
     const navigate = useNavigate();
@@ -61,6 +62,10 @@ const Covered = () => {
     return (
         <div className="page1-container">
             <div className="page1-content">
+                <span className="page1-title">
+                    <span>Persona</span>
+                    <img className="persona_img" src={persona} alt="persona" />
+                </span>
                 <h1 className="trained-title">
                     당신의 목소리로<br />커버 노래가 생성되었습니다!
                 </h1>
@@ -81,14 +86,15 @@ const Covered = () => {
                         Your browser does not support the audio element.
                     </audio>
                 </div>
+                <div className="button-group">
+                    <button className="cover-action-button primary" onClick={handleAnotherCover}>
+                        다른 노래 커버하기
+                    </button>
 
-                <button className="cover-action-button primary" onClick={handleAnotherCover}>
-                    다른 노래 커버하기
-                </button>
-
-                <button className="cover-action-button secondary" onClick={handleGoHome}>
-                    홈으로
-                </button>
+                    <button className="cover-action-button secondary" onClick={handleGoHome}>
+                        홈으로
+                    </button>
+                </div>
             </div>
         </div>
     );
