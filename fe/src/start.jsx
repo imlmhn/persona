@@ -10,7 +10,6 @@ const Start = () => {
     const [voiceFiles, setVoiceFiles] = useState([]);
     const [modelFiles, setModelFiles] = useState([]);
     const [modelName, setModelName] = useState('');
-    const [f0Method, setF0Method] = useState('rmvpe');
     const [totalEpoch, setTotalEpoch] = useState(1);
     const navigate = useNavigate();
 
@@ -71,7 +70,7 @@ const Start = () => {
                 clean_strength: 0.8,
                 chunk_len: 3.0,
                 overlap_len: 0.3,
-                f0_method: f0Method,
+                f0_method: 'rmvpe',
                 hop_length: 128,
                 gpu: '0',
                 embedder_model: 'contentvec',
@@ -179,7 +178,6 @@ const Start = () => {
                         {activeTab === 'model' && (
                             <>
                                 <p>모델 업로드는 <strong>ZIP 파일(.zip)</strong>로, <strong>모델(.pth)</strong> 파일과 <strong>인덱스(.index)</strong> 파일을 포함해야 합니다.</p>
-                                <p><strong>1개의 ZIP 파일</strong>만 업로드할 수 있으며, 학습 과정을 <strong>생략</strong>합니다.</p>
                             </>
                         )}
                     </div>
@@ -248,15 +246,7 @@ const Start = () => {
                                     />
                                 </div>
                                 <div className="option-item">
-                                    <label>F0 변환 방식</label>
-                                    <select value={f0Method} onChange={(e) => setF0Method(e.target.value)}>
-                                        <option value="rmvpe">rmvpe</option>
-                                        <option value="harvest">harvest</option>
-                                        <option value="crepe">crepe</option>
-                                    </select>
-                                </div>
-                                <div className="option-item">
-                                    <label>에포크 수</label>
+                                    <label>학습 횟수</label>
                                     <input
                                         type="number"
                                         min={1}
