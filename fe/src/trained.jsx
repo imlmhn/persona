@@ -61,6 +61,12 @@ const Trained = () => {
             return;
         }
 
+        // 파일 크기 체크
+        if (songFile.size > 100 * 1024 * 1024) {
+            alert('파일 크기가 100MB를 초과했습니다.');
+            return;
+        }
+
         // 피치 옵션에 따른 값 설정
         let pitchValue = 0;
         if (pitchOption === 'male_to_female') {
@@ -90,23 +96,28 @@ const Trained = () => {
         formData.append('model_name', modelName);
         formData.append('config', JSON.stringify(config));
 
+        console.log('Config sent:', JSON.stringify(config)); // 디버깅 로그
+
         try {
             const response = await fetch('http://localhost:5000/cover_song', {
                 method: 'POST',
                 body: formData,
             });
 
-            if (response.ok) {
-                const result = await response.json();
-                console.log('커버 시작:', result);
-                alert('노래 파일이 업로드되었습니다. 커버 생성을 시작합니다!');
-                sessionStorage.setItem('model_name', result.model_name);
-                navigate('/covering');
-            } else {
-                const errorData = await response.json();
-                alert(`커버 시작 실패: ${errorData.message}`);
+            if (!response.ok) {
+                const text = await response.text();
+                console.error('Server response:', text);
+                alert(`커버 시작 실패: 서버에서 ${response.status} 오류가 발생했습니다.`);
+                return;
             }
+
+            const result = await response.json();
+            console.log('커버 시작:', result);
+            alert('노래 파일이 업로드되었습니다. 커버 생성을 시작합니다!');
+            sessionStorage.setItem('model_name', result.model_name);
+            navigate('/covering');
         } catch (error) {
+            console.error('Fetch error:', error);
             alert(`서버와 통신 중 오류가 발생했습니다: ${error.message}`);
         }
     };

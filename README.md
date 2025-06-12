@@ -2,6 +2,7 @@
 
 ## 데모 영상
 
+[![Watch the video](https://img.youtube.com/vi/uwgDTwltX6Q/0.jpg)](https://www.youtube.com/watch?v=uwgDTwltX6Q)
 
 ## 👥 팀원 소개 (Team 0010)
 
