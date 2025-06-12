@@ -4,7 +4,7 @@
 ## 데모 영상
 
 
----
+
 ## 👥 팀원 소개 (Team 0010)
 
 | 이름     | 역할 및 담당 |
@@ -13,7 +13,7 @@
 | 김지민   | AI 테스트 담당. 적합한 모델 판별 |
 | 이문환   | 프론트엔드, 백엔드 구현 및 AI 연동 |
 
----
+
 ## 🛠 기술 스택 (Tech Stack)
 
 #### 📦 Frontend
@@ -29,7 +29,7 @@
 #### 🧠 AI / 딥러닝
 - **PyTorch**: 음성 모델 학습 및 커버 모델 구현
 - **CUDA / cuDNN**: GPU 기반 모델 학습 가속화
----
+
 ### 🚀 주요 기능
 
 
@@ -45,11 +45,8 @@
 - 학습된 모델을 사용해 기존 노래 파일을 새로운 음색으로 커버
 - 업로드한 노래 파일을 기반으로 AI 커버 음원 생성
 
----
+
 ## ▶️ 화면구성 및 서비스 시나리오 설계
-
-
-
 
 ###  📄 모델 학습하기 페이지
 ![Image](https://github.com/user-attachments/assets/31145e74-ee7f-412e-bd53-7b27317f0049)
@@ -92,7 +89,7 @@
 - 클라이언트는 `sessionStorage`에 모델 이름 저장
 - 훈련 완료 페이지로 이동
 
----
+
 
 ### 📄 2. 훈련 완료 페이지
 ![Image](https://github.com/user-attachments/assets/155964c8-9a32-4329-9d02-d10ed0f45412)
@@ -119,7 +116,6 @@
 - `sessionStorage`에 노래 이름과 URL 저장
 - 커버 완료 페이지로 이동
 
----
 
 ### 📄 3. 커버 생성 완료 페이지
 ![Image](https://github.com/user-attachments/assets/48ee1fb5-2e66-490c-a26a-cfae658a6e8b)
