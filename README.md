@@ -16,22 +16,21 @@
 
 ## 🛠 기술 스택 (Tech Stack)
 
-#### 📦 Frontend
+### AI / 딥러닝
+- **PyTorch**: 음성 모델 학습 및 커버 모델 구현
+- **CUDA / cuDNN**: GPU 기반 모델 학습 가속화
+
+### Frontend
 - **React (Vite)**: 빠른 번들링과 개발 환경 제공
 - **Axios**: 비동기 API 요청 처리
 - **React Router DOM**: 클라이언트 사이드 라우팅 구현
 
-#### 🔧 Backend
+### Backend
 - **Flask**: Python 기반 경량 웹 프레임워크
 - **Socket.IO (Flask-SocketIO)**: 실시간 통신 (학습/커버 진행 상황 전송)
 - **Python**: 서버 로직 및 AI 모델 제어
 
-#### 🧠 AI / 딥러닝
-- **PyTorch**: 음성 모델 학습 및 커버 모델 구현
-- **CUDA / cuDNN**: GPU 기반 모델 학습 가속화
-
 ### 🚀 주요 기능
-
 
 #### 🧠 1. 내 목소리로 AI 보컬 모델 만들기
 - 최대 5개의 `.wav` 또는 `.mp3` 음성 파일을 업로드해 나만의 보컬 모델을 학습
@@ -46,7 +45,7 @@
 - 업로드한 노래 파일을 기반으로 AI 커버 음원 생성
 
 
-## ▶️ 화면구성 및 서비스 시나리오 설계
+## ▶️ 화면 구성 및 서비스 시나리오 설계
 
 ###  📄 모델 학습하기 페이지
 ![Image](https://github.com/user-attachments/assets/31145e74-ee7f-412e-bd53-7b27317f0049)
