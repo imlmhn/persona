@@ -4,6 +4,9 @@
 
 [![Watch the video](https://img.youtube.com/vi/uwgDTwltX6Q/0.jpg)](https://www.youtube.com/watch?v=uwgDTwltX6Q)
 
+## 👥 Notion
+[Persona](https://frill-night-b56.notion.site/Persona-20ea2d3a452a80c6afccf6096dd0e2e4)
+
 ## 👥 팀원 소개 (Team 0010)
 
 | 이름     | 역할 및 담당 |
